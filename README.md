@@ -1,4 +1,4 @@
-\# Initialize a New Repository
+\## Initialize a New Repository
 
 
 
@@ -33,6 +33,28 @@ After this, you can start tracking files using git add and git commit.
 
 
 * \[git commit -m "your message here"]  it takes all the changes you’ve staged and saves them as a new version in your repository’s history.
+
+
+
+
+
+\# Connect to GitHub
+
+
+
+* Open \[GitHub] and click on \[New Repository]
+
+
+
+* Enter a Repository name
+
+
+
+* Description
+
+
+
+Click on \[Create repository]S
 
 
 
