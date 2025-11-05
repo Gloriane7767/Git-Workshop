@@ -38,7 +38,7 @@ After this, you can start tracking files using git add and git commit.
 
 
 
-\# Connect to GitHub
+\## Connect to GitHub
 
 
 
@@ -54,7 +54,31 @@ After this, you can start tracking files using git add and git commit.
 
 
 
-Click on \[Create repository]S
+Click on \[Create repository]
+
+
+
+
+
+\## Link to your local repository
+
+
+
+In the \[Terminal] type these commands:
+
+
+
+* \[git remote add origin: "enter your project link"] it connects your local repo to your GitHub.
+
+
+
+* \[git branch -M main] it brings your local repository in line with github's default naming.
+
+
+
+* \[git push -u origin main] it sends your local commits to the remote repository.
+
+
 
 
 
