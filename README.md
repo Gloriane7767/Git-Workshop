@@ -24,5 +24,21 @@
 
 
 
+After this, you can start tracking files using git add and git commit.
+
+
+
+* \[git add .] - it adds all new, modified, or deleted files in your current folder to the staging area.
+
+
+
+* \[git commit -m "your message here"]  it takes all the changes you’ve staged and saves them as a new version in your repository’s history.
+
+
+
+
+
+
+
 
 
