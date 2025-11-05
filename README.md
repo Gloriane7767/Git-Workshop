@@ -86,9 +86,29 @@ In the \[Terminal] type these commands:
 
 
 
+\## Cloning a  remote Repository
 
 
 
+* Open the project in your remote repository
 
 
+
+* Click on the \[Code] the green button on your right
+
+
+
+* Copy the Https link
+
+
+
+* Open the \[Terminal], then the directory where you want the project to be saved and run these commands:
+
+
+
+* \[git clone] then paste the copied \[Link]
+
+
+
+It will save a copy of the project in this directory.
 
