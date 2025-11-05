@@ -110,5 +110,37 @@ In the \[Terminal] type these commands:
 
 
 
-It will save a copy of the project in this directory.
+* It will save a copy of the project in this directory.
+
+
+
+
+
+\## Branching and Merging
+
+
+
+* Open the repo you want to create a branch
+
+
+
+* Click on \[main] on the left of the screen
+
+
+
+* Enter the branch name to create a branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;
 
