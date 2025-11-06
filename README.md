@@ -1,41 +1,65 @@
-\# README.md
+# Introduction to Git
 
-\## Initialize a New Repository
+## Table of Content
 
-* Create a directory in your machine
+1. [Setting Up a New Git Repository](https://your-link-here.com)
+2. [Setting Up a New GitHub Repository](https://your-link-here.com)
+3. [Git/ Git WorkFlow](https://your-link-here.com)
+   
+   - [Using VS Code](https://your-link-here.com)
+   - [Using Git Commands](https://your-link-here.com)
+   
+#### Setting Up and Initialize a New Git Repository
 
-* Open the  **Terminal**
+1. Make a New Project Directory in your machine. <br>
+Open the Terminal and use the command &lt;mkdir&gt; then specify the *Directory Name* to create a new project directory.
+   
+2. Navigate to the Project Directory.<br>
+Enter the Project Directory by using &lt;cd directory name&gt;
+   
+3. Initialize the Project Directory. <br>
+Use the command &lt;git init&gt;. This command creates a hidden folder called .git/ in your Project Directory. The folder will store all the versions history and configuration for the project.
 
-* Change to the project directory using the  **cd command** enter your **Folder Name**
+  
+#### Setting a New GitHub Repository
 
-* Inside the project directory, use these commands:
+1.Navigate to [GitHub.com](https://your-link-here.com) <br>
 
-* \[**git init**] - it creates a hidden folder called .git/ in your directory. The folder will store all the versions history and configuration for the project.
+2. Enter a Repository Name <br>
 
+3. Description (optional) <br>
 
-After this, you can start tracking files using git add and git commit.
+4. Click on `<Create Repository>`
+   
+   
+#### Git/ Git WorkFlow
 
-* \[**git add .**] - it adds all new, modified, or deleted files in your current folder to the staging area.
+1. Back to the Terminal <br>
+To connect your Local Repo to your Remote Repo with this command: <br>
 
-* \[**git commit -m "your message here"**]  it takes all the changes you’ve staged and saves them as a new version in your repository’s history.
+```git remote add origin <URL>```
+Replace the &lt;URL&gt; with the copied URL from GitHub. <br>
 
+This wiil synch your Local Repo with your Remote Repo.
 
-\## Connect to GitHub
+2. Adding Udates to the Repos. <br>
 
-* Open \[**GitHub**] and click on \[**New Repository**]
+- Add changes to the Staging Area:
 
-* Enter a Repository name
+  ```git add .```
+  
+- Commiting Changes to the Local Repo:
 
-* Description
+  ```git commit -m "add commit message" .```
 
-Click on \[**Create repository**]
+- To Check Repo Status:
 
-\## Link to your local repository
+  ```git status```
 
-In the \[**Terminal**] type these commands:
+-To Check List of Commits:
 
-* \[**git remote add origin: "enter your project link"**] it connects your local repo to your GitHub.
-
+  ```git log```
+  
 * \[**git branch -M main**] it brings your local repository in line with github's default naming.
 
 * \[**git push -u origin main**] it sends your local commits to the remote repository.
