@@ -142,5 +142,22 @@ After merging locally, send the changes to GitHub
 
 #### Collaborating with Pull Requests
 
+1. Navigate the agithub repo using owners &lt;URL&gt;
+
+2. On the Top Right hand Conner, click on &lt;Fork&gt;
+
+3. Then below the page on the Right Conner, click on &lt;Create fork&gt;
+   The Repo is forked to your github. Below &lt;Code&gt;, your will see &lt;sync fork&gt;
+
+5. Make some changes and commit
+
+6. Go to the forked repo and clkick on &lt;Pull requests&gt; at the top
+
+7. Click on &lt;New pull request&gt;
+
+8. Add your comments and then click on &lt;Comment&gt;
+
+9. Otherwise if you want to close the pull request click on &lt;Close with comment&gt;
+   
 &nbsp;
 
