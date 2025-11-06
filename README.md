@@ -140,5 +140,7 @@ After merging locally, send the changes to GitHub
 
    ```git push origin --delete feature-login```
 
+#### Collaborating with Pull Requests
+
 &nbsp;
 
