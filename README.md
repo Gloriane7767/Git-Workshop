@@ -159,7 +159,7 @@ After merging locally, send the changes to GitHub
 
 #### Revert and Reset
 
-1. In Git, you can use two main tools to “undo” or “go back” in your repository history:
+1. In Git, you can use two main tools to &lt;undo&gt; or &lt;back&gt;in your repository history:
 
 Suppose you made a commit but want to undo it — without deleting history
 
