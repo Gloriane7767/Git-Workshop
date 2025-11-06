@@ -1,146 +1,186 @@
-\# README.md
+# Introduction to Git and GitHub
 
+## Table of Content
 
+1. [Setting Up a New Git Repository](https://your-link-here.com)
+2. [Setting Up a New GitHub Repository](https://your-link-here.com)
+3. [Git/ GitHub WorkFlow](https://your-link-here.com)
+   
+   - [Using VS Code](https://your-link-here.com)
+   - [Using Git Commands](https://your-link-here.com)
+   
+#### Setting Up and Initialize a New Git Repository
 
-\## Initialize a New Repository
+1. **Make a New Project Directory in your machine** <br>
+Open the Terminal and use the command &lt;mkdir&gt; then specify the *Directory Name* to create a new project directory.
+   
+2. **Navigate to the Project Directory**<br>
+Enter the Project Directory by using &lt;cd directory name&gt;
+   
+3. **Initialize the Project Directory**<br>
+Use the command &lt;git init&gt;. This command creates a hidden folder called .git/ in your Project Directory. The folder will store all the versions history and configuration for the project.
 
+  
+#### Setting a New GitHub Repository
 
+1. Navigate to [GitHub.com](https://your-link-here.com) <br>
 
-* Create a directory in your machine
+2. Enter a Repository Name <br>
 
+3. Description (optional) <br>
 
+4. Click on `<Create Repository>`
+   
+   
+#### Git/ Git WorkFlow
 
-* Open the \[Terminal]
+1. **Back to the Terminal**<br>
+To connect your Local Repo to your Remote Repo with this command: <br>
 
+```git remote add origin <URL>```
 
+Replace the &lt;URL&gt; with the copied URL from GitHub. <br>
 
-* Change to the project directory using the \[cd command] enter your \[Folder Name]
+This wiil synch your Local Repo with your Remote Repo.
 
+2. **Adding Udates to the Repos**<br>
 
+- **Add changes to the Staging Area:** <br>
+This command add push your changes to the staging area in your local repo.
 
-* Inside the project directory, use these commands:
+  ```git add .```
+  
+- **Commiting Changes to the Local Repo:**
 
+  ```git commit -m "add commit message" .```
 
+- **To Check Repo Status:**
 
-* \[git init] - it creates a hidden folder called .git/ in your directory. The folder will store all the versions history and configuration for the project.
+  ```git status```
 
+- **To Check List of Commits:**
 
+  ```git log```
 
+- **Commiting Changes to the Remote Repo:**
 
+  ```git branch -M main```
 
-After this, you can start tracking files using git add and git commit.
+  ```git push -u origin main```
 
+  
+#### Cloning a Remonte Repository
 
+1. Open the project in your remote repository
 
-* \[git add .] - it adds all new, modified, or deleted files in your current folder to the staging area.
+2. Click on the &lt;CODE&gt; the green button on your right conner of the page
 
+3. Copy the &lt;URL&gt; 
 
+4. Back &lt;Terminal&gt;, open the directory where you want the project to be saved &lt;cd directory name&gt;
 
-* \[git commit -m "your message here"]  it takes all the changes you’ve staged and saves them as a new version in your repository’s history.
+5. Use the command &lt;git clone&gt; then paste the &lt;URL&gt; and &lt;Enter&gt;
 
+The Repository is now saved in the Project Directory.
 
 
+#### Create a .gitignore File
 
+1. Create a .gitignore file inside your repository.
+2. Open with Note Pad and add all the files you want to ignore
+3. Use these command to stage and push the file:
 
-\## Connect to GitHub
+  
+  ```git add.ignore```
+  
+  ```git commit -m "commit message"```
+  
+  ```git push```
 
 
+#### Branching 
 
-* Open \[GitHub] and click on \[New Repository]
+1. Open the repo you want to create a branch
 
+2. Click on &lt;main&gt; on the top-left  side of the page
 
+3. Enter a branch name to create a branch
 
-* Enter a Repository name
 
+#### Merging
 
+1. **Check out to the Branch you want to Merge int**:
 
-* Description
+   ```git checkout main```
+   
+3. **Update your Branch**:
+   Pull the latest changes from GitHub so your branch is up to date:**
 
+   ```git pull origin main```
 
+5. **Merge the other branch into your current branch**
 
-Click on \[Create repository]
+    ```git merge feature-login```
 
+6. **Push the merged branch to GitHub**:
 
+After merging locally, send the changes to GitHub
 
+ ```git push origin main```
 
+ #### Optional: Delete the merged branch<br>
 
-\## Link to your local repository
+- Delete locally:
+  
+   ```git branch -d feature-login```
 
+- Delete on GitHub:
 
+   ```git push origin --delete feature-login```
 
-In the \[Terminal] type these commands:
+#### Collaborating with Pull Requests
 
+1. Navigate the agithub repo using owners &lt;URL&gt;
 
+2. On the Top Right hand Conner, click on &lt;Fork&gt;
 
-* \[git remote add origin: "enter your project link"] it connects your local repo to your GitHub.
+3. Then below the page on the Right Conner, click on &lt;Create fork&gt;
+   The Repo is forked to your github. Below &lt;Code&gt;, your will see &lt;sync fork&gt;
 
+5. Make some changes and commit
 
+6. Go to the forked repo and clkick on &lt;Pull requests&gt; at the top
 
-* \[git branch -M main] it brings your local repository in line with github's default naming.
+7. Click on &lt;New pull request&gt;
 
+8. Add your comments and then click on &lt;Comment&gt;
 
+9. Otherwise if you want to close the pull request click on &lt;Close with comment&gt;
 
-* \[git push -u origin main] it sends your local commits to the remote repository.
+#### Revert and Reset
 
+1. ** In Git, you can use two main tools to “undo” or “go back” in your repository history:**
 
+Suppose you made a commit but want to undo it — without deleting history
 
+- ** First, see your commit history:**
 
+```git log --oneline```
 
-\## Cloning a  remote Repository
+**Choose the commit you want to undo (e.g., a1b2c3d)**
 
+   ```git revert a1b2c3d```
 
+This creates a new commit that undoes everything done in that commit.
 
-* Open the project in your remote repository
+Git might open your text editor to confirm the message — just save and close
 
+**Push the change:**
 
+```git push origin main```
 
-* Click on the \[Code] the green button on your right
+Your repo now includes a new commit that reverses the unwanted change — without rewriting history.
 
-
-
-* Copy the Https link
-
-
-
-* Open the \[Terminal], then the directory where you want the project to be saved and run these commands:
-
-
-
-* \[git clone] then paste the copied \[Link]
-
-
-
-* It will save a copy of the project in this directory.
-
-
-
-
-
-\## Branching and Merging
-
-
-
-* Open the repo you want to create a branch
-
-
-
-* Click on \[main] on the left of the screen
-
-
-
-* Enter the branch name to create a branch
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
 &nbsp;
 
