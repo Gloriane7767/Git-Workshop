@@ -69,29 +69,76 @@ This command add push your changes to the staging area in your local repo.
   ```git push -u origin main```
 
   
+#### Cloning a Remonte Repository
 
-\## Cloning a  remote Repository
+1. Open the project in your remote repository
 
-* Open the project in your remote repository
+2. Click on the &lt;CODE&gt; the green button on your right conner of the page
 
-* Click on the \[**Code**] the green button on your right
+3. Copy the &lt;URL&gt; 
 
-* Copy the Https link
+4. Back &lt;Terminal&gt;, open the directory where you want the project to be saved &lt;cd directory name&gt;
 
-* Open the \[**Terminal**], then the directory where you want the project to be saved and run these commands:
+5. Use the command &lt;git clone&gt; then paste the &lt;URL&gt; and &lt;Enter&gt;
 
-* \[**git clone**] then paste the copied \[**Link**]
+The Repository is now saved in the Project Directory.
 
-* It will save a copy of the project in this directory.
 
-\## Branching and Merging
+#### Create a .gitignore File
 
-* Open the repo you want to create a branch
+1. Create a .gitignore file inside your repository.
+2. Open with Note Pad and add all the files you want to ignore
+3. Use these command to stage and push the file:
 
-* Click on \[**main**] on the left of the screen
+  
+  ```git add.ignore```
+  
+  ```git commit -m "commit message"```
+  
+  ```git push```
 
-* Enter the branch name to create a branch
 
+#### Branching 
+
+1. Open the repo you want to create a branch
+
+2. Click on &lt;main&gt; on the top-left  side of the page
+
+3. Enter a branch name to create a branch
+
+
+#### Merging
+
+1. **Check out to the Branch you want to Merge int**:
+
+   ```git checkout main```
+   
+3. **Update your Branch**:
+   Pull the latest changes from GitHub so your branch is up to date:**
+
+   ```git pull origin main```
+
+5. **Merge the other branch into your current branch**
+
+    ```git merge feature-login```
+
+6. **Push the merged branch to GitHub**:
+
+After merging locally, send the changes to GitHub
+
+ ```git push origin main```
+
+ #### Optional: Delete the merged branch<br>
+
+ If you don’t need the feature branch anymore
+
+- Delete locally:
+  
+   ```git branch -d feature-login```
+
+- Delete on GitHub:
+
+   ```git push origin --delete feature-login```
 
 &nbsp;
 
