@@ -11,19 +11,19 @@
    
 #### Setting Up and Initialize a New Git Repository
 
-1. Make a New Project Directory in your machine. <br>
+1. **Make a New Project Directory in your machine** <br>
 Open the Terminal and use the command &lt;mkdir&gt; then specify the *Directory Name* to create a new project directory.
    
-2. Navigate to the Project Directory.<br>
+2. **Navigate to the Project Directory**<br>
 Enter the Project Directory by using &lt;cd directory name&gt;
    
-3. Initialize the Project Directory. <br>
+3. **Initialize the Project Directory**<br>
 Use the command &lt;git init&gt;. This command creates a hidden folder called .git/ in your Project Directory. The folder will store all the versions history and configuration for the project.
 
   
 #### Setting a New GitHub Repository
 
-1.Navigate to [GitHub.com](https://your-link-here.com) <br>
+1. Navigate to [GitHub.com](https://your-link-here.com) <br>
 
 2. Enter a Repository Name <br>
 
@@ -34,35 +34,41 @@ Use the command &lt;git init&gt;. This command creates a hidden folder called .g
    
 #### Git/ Git WorkFlow
 
-1. Back to the Terminal <br>
+1. **Back to the Terminal**<br>
 To connect your Local Repo to your Remote Repo with this command: <br>
 
 ```git remote add origin <URL>```
+
 Replace the &lt;URL&gt; with the copied URL from GitHub. <br>
 
 This wiil synch your Local Repo with your Remote Repo.
 
-2. Adding Udates to the Repos. <br>
+2. **Adding Udates to the Repos**<br>
 
-- Add changes to the Staging Area:
+- **Add changes to the Staging Area:** <br>
+This command add push your changes to the staging area in your local repo.
 
   ```git add .```
   
-- Commiting Changes to the Local Repo:
+- **Commiting Changes to the Local Repo:**
 
   ```git commit -m "add commit message" .```
 
-- To Check Repo Status:
+- **To Check Repo Status:**
 
   ```git status```
 
--To Check List of Commits:
+- **To Check List of Commits:**
 
   ```git log```
-  
-* \[**git branch -M main**] it brings your local repository in line with github's default naming.
 
-* \[**git push -u origin main**] it sends your local commits to the remote repository.
+- **Commiting Changes to the Remote Repo:**
+
+  ```git branch -M main```
+
+  ```git push -u origin main```
+
+  
 
 \## Cloning a  remote Repository
 
