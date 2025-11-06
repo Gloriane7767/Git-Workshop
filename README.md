@@ -128,9 +128,7 @@ In the \[Terminal] type these commands:
 
 
 
-* Enter the branch name to create a branch
-
-
+Enter the branch name to create a branch
 
 
 
