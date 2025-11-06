@@ -4,7 +4,7 @@
 
 1. [Setting Up a New Git Repository](https://your-link-here.com)
 2. [Setting Up a New GitHub Repository](https://your-link-here.com)
-3. [Git/ Git WorkFlow](https://your-link-here.com)
+3. [Git/ GitHub WorkFlow](https://your-link-here.com)
    
    - [Using VS Code](https://your-link-here.com)
    - [Using Git Commands](https://your-link-here.com)
