@@ -156,6 +156,31 @@ After merging locally, send the changes to GitHub
 8. Add your comments and then click on &lt;Comment&gt;
 
 9. Otherwise if you want to close the pull request click on &lt;Close with comment&gt;
+
+#### Revert and Reset
+
+1. ** In Git, you can use two main tools to “undo” or “go back” in your repository history:**
+
+Suppose you made a commit but want to undo it — without deleting history
+
+- ** First, see your commit history:**
+
+```git log --oneline```
+
+**Choose the commit you want to undo (e.g., a1b2c3d)**
+
+   ```git revert a1b2c3d```
+
+This creates a new commit that undoes everything done in that commit.
+
+Git might open your text editor to confirm the message — just save and close
+
+**Push the change:**
+
+```git push origin main```
+
+Your repo now includes a new commit that reverses the unwanted change — without rewriting history.
+
    
 &nbsp;
 
