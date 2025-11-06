@@ -130,79 +130,9 @@ After merging locally, send the changes to GitHub
 
  #### Optional: Delete the merged branch<br>
 
-<<<<<<< HEAD
-\## Link to your local repository
-
-
-
-In the \[Terminal] type these commands:
-
-
-
-* \[git remote add origin: "enter your project link"] it connects your local repo to your GitHub.
-
-
-
-* \[git branch -M main] it brings your local repository in line with github's default naming.
-
-
-
-* \[git push -u origin main] it sends your local commits to the remote repository.
-
-
-
-
-
-\## Cloning a  remote Repository
-
-
-
-* Open the project in your remote repository
-
-
-
-* Click on the \[Code] the green button on your right
-
-
-
-* Copy the Https link
-
-
-
-* Open the \[Terminal], then the directory where you want the project to be saved and run these commands:
-
-
-
-* \[git clone] then paste the copied \[Link]
-
-
-
-* It will save a copy of the project in this directory.
-
-
-
-
-
-\## Branching and Merging
-
-
-
-* Open the repo you want to create a branch
-
-
-
-* Click on \[main] on the left of the screen
-
-
-
-Enter the branch name to create a branch
-=======
- If you don’t need the feature branch anymore
-
 - Delete locally:
   
    ```git branch -d feature-login```
->>>>>>> 9b2c34561c6250a1bd3b40e6631a6d66478156c6
 
 - Delete on GitHub:
 
